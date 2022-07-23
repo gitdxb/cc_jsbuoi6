@@ -1,4 +1,4 @@
-function timSoNguyenDuong(params) {
+function timSoNguyenDuong() {
     var sum = 0;
     var count = 1;
     for (let i = 1; i < 10000; i++) {
