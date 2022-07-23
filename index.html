@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BÀI TẬP JS BUỔI 6</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">BÀI TẬP JS BUỔI 6</a>
+        </div>
+    </nav>
+  <section class="project container py-1 my-5">
+    <!-- tab menu -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="bai-1" data-toggle="tab" href="#bai1" role="tab" aria-controls="1️⃣ Tìm số chẵn/lẻ nhỏ hơn 100" aria-selected="true">📒 Bài 1</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="bai-2" data-toggle="tab" href="#bai2" role="tab" aria-controls="2️⃣ Đếm số chia hết cho 3" aria-selected="false">📒 Bài 2</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="bai-3" data-toggle="tab" href="#bai3" role="tab" aria-controls="3️⃣ Tìm số nguyên dương nhỏ nhất" aria-selected="false">📒 Bài 3</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="bai-4" data-toggle="tab" href="#bai4" role="tab" aria-controls="4️⃣ Tính tổng" aria-selected="false">📒 Bài 4</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="bai-5" data-toggle="tab" href="#bai5" role="tab" aria-controls="5️⃣ Tính giai thừa" aria-selected="false">📒 Bài 5</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="bai-6" data-toggle="tab" href="#bai6" role="tab" aria-controls="6️⃣ Tạo thẻ div" aria-selected="false">📒 Bài 6</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="bai-7" data-toggle="tab" href="#bai7" role="tab" aria-controls="7️⃣ In số nguyên tố" aria-selected="false">📒 Bài 7</a>
+          </li>
+    </ul>
+      
+    <div class="tab-content">
+        <!-- Bai 1 -->
+        <div class="tab-pane active" id="bai1" role="tabpanel" aria-labelledby="bai-1">
+            <div class="col-6 py-5 my-2">
+                <h2>1️⃣ Tìm số chẵn/lẻ nhỏ hơn 100</h2>
+                <button id="btnBai1" type="button" class="btn btn-success">Kết quả</button>
+                <div class="alert alert-info my-3">
+                    <span>👉🏿 </span><span id="kqBai1"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bai 2 -->
+        <div class="tab-pane fade" id="bai2" role="tabpanel" aria-labelledby="bai-2">
+            <div class="col-6 py-5 my-2">
+                <h2>2️⃣ Đếm số chia hết cho 3</h2>
+                    <button id="btnBai2" type="button" class="btn btn-success">Kết quả</button>
+                <div class="alert alert-info my-3">
+                    <span>👉🏿 </span><span id="kqBai2"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bai 3 -->
+        <div class="tab-pane fade show" id="bai3" role="tabpanel" aria-labelledby="bai-3">
+            <div class="col-6 py-5 my-2">
+                <h2>3️⃣ Tìm số nguyên dương nhỏ nhất</h2>
+                    <button id="btnBai3" type="button" class="btn btn-success">Kết quả</button>
+                <div class="alert alert-info my-3">
+                    <span>👉🏿 </span><span id="kqBai3"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bai 4 -->
+        <div class="tab-pane fade" id="bai4" role="tabpanel" aria-labelledby="bai-4">
+            <div class="col-6 py-5 my-2">
+                <h2>4️⃣ Tính tổng</h2>
+                <form>
+                    <div class="form-row form-group">
+                        <div class="form-group col-lg-4">
+                            <input type="text" class="form-control" id="nhapX" placeholder="Nhập x">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <input type="number" class="form-control" id="nhapN" placeholder="Nhập n">
+                        </div>
+                    </div>
+                    
+                <button id="btnBai4" type="button" class="btn btn-success">Kết quả</button>
+        
+                </form>
+                <div class="alert alert-info my-3">
+                    <span>👉🏿 </span><span id="kqBai4"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bai 5 -->
+        <div class="tab-pane fade" id="bai5" role="tabpanel" aria-labelledby="bai-5">
+            <div class="col-6 py-5 my-2">
+                <h2>5️⃣ Tính giai thừa</h2>
+                    <div class="form-group">
+                        <input type="number" class="form-control" id="giaiThuaN" placeholder="Nhập số n">
+                    </div>
+                <button id="btnBai5" type="button" class="btn btn-success">Kết quả</button>
+                <div class="alert alert-info my-3">
+                    <span>👉🏿 </span><span id="kqBai5"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bai 6 -->
+        <div class="tab-pane fade" id="bai6" role="tabpanel" aria-labelledby="bai-6">
+            <div class="col-6 py-5 my-2">
+                <h2>6️⃣ Tạo thẻ div</h2>
+                <button id="btnBai6" type="button" class="btn btn-success">Kết quả</button>
+                <div class="alert alert-info my-3">
+                    <span>👉🏿 </span><span id="kqBai6"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bai 7 -->
+        <div class="tab-pane fade" id="bai7" role="tabpanel" aria-labelledby="bai-7">
+            <div class="col-6 py-5 my-2">
+                <h2>7️⃣ In số nguyên tố</h2>
+                    <div class="form-group">
+                        <input type="number" class="form-control" id="nhapSoN_b7" placeholder="Nhập số n">
+                    </div>
+                <button id="btnBai7" type="button" class="btn btn-success">Kết quả</button>
+                <div class="alert alert-info my-3">
+                    <span>👉🏿 </span><span id="kqBai7"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+    <!-- <script>
+        function myFunction() {
+          var x = document.getElementById("chonKH").value;
+          document.getElementById("demo").innerHTML = '<input id="soKetNoi" type="number" class="my-3 form-control" placeholder="Số kết nối">';
+
+            // Tuy chon
+            var select = document.querySelector('#chonKH');
+            var option = select.options[select.selectedIndex].value;
+            if (option == 'ND') {
+                document.getElementById("demo").innerHTML = '';
+            }
+        }
+        </script> -->
+    <!-- JS files -->
+    <script src="./js/bai1.js"></script>
+    <script src="./js/bai2.js"></script>
+    <script src="./js/bai3.js"></script>
+    <script src="./js/bai4.js"></script>
+    <script src="./js/bai5.js"></script>
+    <script src="./js/bai6.js"></script>
+    <script src="./js/bai7.js"></script>
+</body>
+
+</html>
