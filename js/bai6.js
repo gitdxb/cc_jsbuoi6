@@ -9,7 +9,7 @@ function divXanhDo() {
     for (var i = 0; i < 10; i++) {
         theDiv = document.createElement("div");
         if (i % 2 == 0) {
-            divContent = document.createTextNode("Lẻ: " + i);
+            divContent = document.createTextNode("Chẵn: " + i);
             theDiv.style.backgroundColor = "red";
             theDiv.style.color = "white";
         } else {
